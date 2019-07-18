@@ -1,6 +1,6 @@
 function SuperAdmin() {
-  var Сasino = new Casino("Казино");
-  var GameMachine = new GameMachine("Ігровий автомат");
+  var Г‘asino = new Casino("РљР°Р·РёРЅРѕ");
+  var GameMachine = new GameMachine("Р†РіСЂРѕРІРёР№ Р°РІС‚РѕРјР°С‚");
 }
 
 
@@ -14,7 +14,7 @@ function Casino(name) {
   };
 }
 
-number = prompt("Ваша ставка")
+number = prompt("Р’Р°С€Р° СЃС‚Р°РІРєР°")
 function GameMachine(sum) {
   this.getMoney = function() {
     return MoneyAmount;
@@ -25,14 +25,14 @@ function GameMachine(sum) {
     (n1 = Math.floor(Math.random()*(9-1+1)+1));
     (n2 = Math.floor(Math.random()*(9-1+1)+1));
     (n3 = Math.floor(Math.random()*(9-1+1)+1));
-    alert(name + '  '+ "Вам випало: " + n1 + n2 + n3 );
+    alert(name + '  '+ "Р’Р°Рј РІРёРїР°Р»Рѕ: " + n1 + n2 + n3 );
     if(n1 == n2 || n2 == n3 || n1 == n3) {
       number  = (number * 2) ;
-      alert(name + ',' +'  '+"УРА! Ваш Бонус X2" + '  ' + 'Ваш баланс' + '  ' + number );
+      alert(name + ',' +'  '+"РЈР Рђ! Р’Р°С€ Р‘РѕРЅСѓСЃ X2X2" + '  ' + 'Р’Р°С€ Р±Р°Р»Р°РЅСЃ' + '  ' + number );
     }  else if (n1 == n2 && n2 == n3 && n1 == n3 ){
      number  = (number * 3) ;
-      alert(name + ',' +'  '+"УРА! Ваш Бонус X3" + '  ' + 'Ваш баланс' +'  '+ number  );
-    }else{alert(name +',' + '  '+ 'Повезе іншим разом!')
+      alert(name + ',' +'  '+"РЈР Рђ! Р’Р°С€ Р‘РѕРЅСѓСЃ X2 X3" + '  ' + 'Р’Р°С€ Р±Р°Р»Р°РЅСЃ' +'  '+ number  );
+    }else{alert(name +',' + '  '+ 'РџРѕРІРµР·Рµ С–РЅС€РёРј СЂР°Р·РѕРј!')
       
     }
     
@@ -43,7 +43,7 @@ function GameMachine(sum) {
 var count = new GameMachine("");
 
 function User(name,money) {
-  this.name = prompt('Сер/Мадам,ваше ім*я?');
+  this.name = prompt('РЎРµСЂ/РњР°РґР°Рј,РІР°С€Рµ С–Рј*СЏ?');
   this.money = money ;
   this.play = function() {
         count.is();
